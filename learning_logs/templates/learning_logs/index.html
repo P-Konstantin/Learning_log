@@ -1,0 +1,15 @@
+{% extends "learning_logs/base.html" %}
+{% block header %}
+  <div class='jumbotron' style="background-color: #a5f1c0">
+     <h1>Создайте свой веб-журнал для обучения!</h1>
+  </div>
+{% endblock header %}
+{% block content %}
+  <h2>
+     <a href="{% url 'users:register' %}">Создайте аккаунт</a> для
+     ведения своего журнала обучения и пишите темы, которые вы изучили.
+  </h2>
+  <h2>
+     Когда вы узнаёте что-нибудь новое, записывайте изученное вами.
+  </h2>
+{% endblock content %}
